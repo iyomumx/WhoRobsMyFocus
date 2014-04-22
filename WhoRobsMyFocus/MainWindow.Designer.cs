@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.lblHint = new System.Windows.Forms.Label();
             this.tmrMain = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             this.ClientSize = new System.Drawing.Size(171, 77);
             this.Controls.Add(this.lblHint);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
             this.Text = "前台窗口记录器";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);
