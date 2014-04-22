@@ -13,7 +13,7 @@ namespace WhoRobsMyFocus
         [DllImport("user32.dll")]
         static extern int GetWindowTextLength(IntPtr hWnd);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, BestFitMapping = false, ThrowOnUnmappableChar = true)]
         private static extern int GetWindowText(IntPtr hWnd, [MarshalAs(UnmanagedType.LPTStr)] StringBuilder lpString, int nMaxCount);
 
         [DllImport("user32.dll")]
@@ -22,15 +22,15 @@ namespace WhoRobsMyFocus
         [DllImport("user32.dll")]
         private static extern bool ReleaseCapture();
         [DllImport("user32.dll")]
-        private static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
-        private const int WM_SYSCOMMAND = 0x0112;
+        private static extern IntPtr SendMessage(IntPtr hwnd, uint wMsg, UIntPtr wParam, IntPtr lParam);
+        private const uint WM_SYSCOMMAND = 0x0112;
         private const int SC_MOVE = 0xF010;
         private const int HTCAPTION = 0x0002;
-
+        private static UIntPtr MoveCaption = new UIntPtr(SC_MOVE + HTCAPTION);
         public static void DoCaptionDown(IntPtr hWnd)
         {
             ReleaseCapture();
-            SendMessage(hWnd, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
+            SendMessage(hWnd, WM_SYSCOMMAND, MoveCaption, IntPtr.Zero);
         }
 
         public static LogEntry GetTopWindowInfo()
