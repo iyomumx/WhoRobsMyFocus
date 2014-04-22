@@ -38,7 +38,7 @@ namespace WhoRobsMyFocus
             IntPtr hWnd = GetForegroundWindow();
             if (hWnd == IntPtr.Zero) return null;
             uint lpdwProcessId;
-            GetWindowThreadProcessId(hWnd, out lpdwProcessId);
+            if (GetWindowThreadProcessId(hWnd, out lpdwProcessId) == 0) return null;
             Process oProcess = Process.GetProcessById((int)lpdwProcessId);
             int length = GetWindowTextLength(hWnd);
             StringBuilder text = new StringBuilder(length + 1);
