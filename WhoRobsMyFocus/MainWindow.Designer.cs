@@ -37,6 +37,7 @@
             // lblHint
             // 
             this.lblHint.AutoSize = true;
+            this.lblHint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(44)))), ((int)(((byte)(128)))));
             this.lblHint.Location = new System.Drawing.Point(12, 9);
             this.lblHint.Name = "lblHint";
             this.lblHint.Size = new System.Drawing.Size(0, 12);
@@ -52,6 +53,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(235)))));
             this.ClientSize = new System.Drawing.Size(171, 77);
             this.Controls.Add(this.lblHint);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
