@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhoRobsMyFocus", "WhoRobsMyFocus\WhoRobsMyFocus.csproj", "{EA0F0436-4D9F-4497-A8C1-9399CCCEAB31}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WhoRobsMyFocusNext", "WhoRobsMyFocusNext\WhoRobsMyFocusNext.vbproj", "{621FE970-6F33-4CC4-BCE1-7BD5D4AE0066}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EA0F0436-4D9F-4497-A8C1-9399CCCEAB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA0F0436-4D9F-4497-A8C1-9399CCCEAB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA0F0436-4D9F-4497-A8C1-9399CCCEAB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621FE970-6F33-4CC4-BCE1-7BD5D4AE0066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621FE970-6F33-4CC4-BCE1-7BD5D4AE0066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621FE970-6F33-4CC4-BCE1-7BD5D4AE0066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621FE970-6F33-4CC4-BCE1-7BD5D4AE0066}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
